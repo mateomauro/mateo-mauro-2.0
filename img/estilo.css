@@ -1,0 +1,629 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/*Todo para pantalla 4k 2560px */
+
+.header {
+    height: 100vh;
+    background-image: url("fondo-codigo.jpg");
+    background-repeat:no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+ 
+/* nav y menu */
+.nav {
+    height: 10vh;
+    background-color: rgb(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+}
+
+.oscuro {
+    background-color: rgb(0, 0, 0);
+}
+
+.abajo-nav{
+    background-color: rgb(0, 0, 0);
+    transition: all 2s;
+}
+
+
+.menu {
+    width: 100%;
+    font-size: 20px;
+    height: 100%;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+}
+
+.menu a {
+    font-size: 30px;
+    text-decoration: none;
+    color: white;
+    margin: 0 25px;
+    text-transform: uppercase;
+    padding-right: 100px;
+}
+
+#check {
+    display: none;
+}
+
+.menu a:hover {
+    color: #8e8e8e;
+}
+
+.mostrar-menu {
+    font-size: 40px;
+    cursor: pointer;
+    float: right;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    margin-right: 15px;
+    display: none;
+}
+
+/* HOME PARA PANTALLA 4K */
+.home {
+    display: flex;
+    height: 100vh;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+}
+
+.contenedor-img {
+    display: flex;
+    justify-content: end;
+    margin-right: 150px;
+    animation: aparecerImg 2s ease-in-out;
+}
+
+@keyframes aparecerImg {
+    0% {
+        opacity: 0;
+        transform: translateX(20%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.titulo {
+    animation: aparecerText 2s ease-in-out;
+}
+
+@keyframes aparecerText {
+    0% {
+        opacity: 0;
+        transform: translateX(-10%);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.titulo, h2{
+    font-size: 60px;
+    color: white;
+}
+
+.titulo h1 {
+    font-size: 100px;
+    color: #3367d6;
+    text-align: center;
+}
+
+.img-principal {
+    border-radius: 50%;
+}
+
+
+/* ACERCA DE PARA PANTALLA 4K */
+.about {
+    min-height: 90vh;
+    background-color: white;
+    color: #414141;
+    display: grid;
+    grid-template-columns: 7% 40% 6% 40% 7%;
+    grid-template-areas:
+    ". about . habilidades ." ;
+}
+
+.contenedor-about {
+    grid-area: about;
+    margin-top: 23%;
+    opacity: 0;
+}
+
+.contenedor-habilidades{
+    grid-area: habilidades;
+    margin-top: 23%;
+    opacity: 0;
+}
+
+.informacion p {
+    font-size: 16px;
+    color: #414141;
+    margin: 35px 0;
+}
+
+.about h2 {
+    font-size: 24px;
+    color: #414141;
+}
+
+.contenedor-habilidades h2 {
+    text-align: center;
+}
+
+.descargar-cv {
+    background-color: #3667d6;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px;
+    padding: 18px 22px;
+}
+
+.display-habilidades {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.habilidad {
+    width: 150px;
+    height: 150px;
+    margin: 10px 0;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.imagen-habilidad {
+    width: 70%;
+    height: 70%;
+    object-fit: contain;
+}
+
+.imagen-habilidad:hover {
+    cursor: pointer;
+    transition: all 2s;
+    transform: scale(1.15);
+}
+
+
+
+/* PORTAFILIO PARA PANTALLA 4K */
+.portafolio {
+    min-height: 100vh;
+    background-color: white;
+}
+
+.portafolio h2 {
+    font-size: 22px;
+    color: #414141;
+    width: 100%;
+    text-align: center;
+}
+
+.contenedor-portafolio {
+    padding-top: 12vh;
+    opacity: 0;
+}
+
+.trabajos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding-top: 5vh;
+    width: 80%;
+    margin: 0 10%;
+    padding-bottom: 2%;
+}
+
+.proyecto {
+    width: 300px;
+    height: 200px;
+    border: solid 2px black;
+    padding: 0 10vh;
+    margin-top: 3vh;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 13px;
+    cursor: pointer;
+}
+
+.capa {
+    height: 0px;
+    width: 300px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 13px;
+}
+
+.proyecto:hover .capa{
+    height: 300px;
+    transition: all 1s;
+}
+
+
+
+/* CONTACTO PARA PANTALLA 4K */
+.contacto {
+    min-height: 50vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10vh;
+    opacity: 0;
+}
+
+.contacto h2 {
+    font-size: 24px;
+    color:  #414141;
+    text-align: center;
+    transition: all 3s;
+}
+
+.contenedor-contacto {
+    min-height: 40vh;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.contactame {
+    width: 125px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    cursor: pointer;
+}
+
+.contactame a {
+    text-decoration: none;
+}
+
+.imagen-contacto {
+    width: 100px;
+    height: 80px;
+    object-fit: contain;
+}
+
+.imagen-contacto:hover {
+    filter: brightness(70%);
+}
+
+.contactame h3 {
+    font-size: 14px;
+    color: #414141;
+    text-align: center;
+}
+
+
+
+.footer {
+    height: 25vh;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    padding-bottom: 25px;
+}
+
+.footer p {
+    text-align: center;
+    font-size: 14px;
+    color: #414141;
+}
+
+
+/* PARA PC 1440PX */
+@media (max-width: 1440px){
+    .menu a {
+        font-size: 15px;
+        padding-right: 15px;
+    }
+
+    .titulo {
+        margin-left: 100px;
+    }
+
+    .titulo h2 {
+        font-size: 38px;
+    }
+
+    .titulo h1 {
+        font-size: 55px;
+    }
+
+    .contenedor-img {
+        margin-right: 0;
+        display: flex;
+        justify-content: center;
+    }
+
+    .img-principal {
+        width: 280px;
+    }
+}
+
+/* PARA PC DE 1024 PX */
+@media (max-width: 1024px){
+    .menu a {
+        font-size: 12px;
+        padding-right: 15px;
+    }
+ 
+    .titulo {
+        font-size: 20px;
+        margin-left: 0;
+        margin-right: 25px;
+    }
+
+    .titulo h2 {
+        font-size: 30px;
+        width: max-content;
+    }
+
+    .titulo h1 {
+        font-size: 40px;
+    }
+
+    .contenedor-img {
+        margin-right: 50px;
+    }
+
+    .img-principal {
+        width: 250px
+    }
+
+}
+
+/* PARA MENORES DE 900 PX */
+@media (max-width: 985px){
+    .about {
+        display: grid;
+        grid-template-rows: 50% 50%;
+        grid-template-columns: 10% 80% 10%;
+        grid-template-areas:
+        ". about ."
+        ". habilidades ." ;
+    }
+
+    .habilidad {
+        width: 125px;
+        height: 125px;
+    }
+}
+
+
+/* PARA TABLET DE 768 PX */
+@media (max-width: 768px){
+    .nav {
+        background-color: black;
+    }
+    
+    .menu a {
+        font-size: 11px;
+        padding-right: 10px;
+        margin: 0 10px;
+    }
+
+    .img-principal {
+        width: 200px;
+    }
+
+    .titulo h1 {
+        font-size: 35px;
+    }
+
+    .titulo h2 {
+        font-size: 25px;
+    }
+
+    .mostrar-menu{
+        display: block;
+        color: white;
+    }
+
+    .menu {
+        height: 100vh;
+        width: 100%;
+        background-color: black;
+        position: fixed;
+        top: 10vh;
+        right: -100%;
+        transition: all .5s;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-bottom: 10vh;
+    }
+
+    .menu a{
+        width: 100%;
+        text-align: center;
+        margin: 20px 0;
+        font-size: 20px;
+    }
+
+    #check:checked ~.menu{
+        right: 0;
+    }
+
+    .proyecto {
+        width: 250px;
+        height: 150px;
+    }
+
+    .capa {
+        width: 250px;
+        height: 0px;
+    }
+
+    .portafolio h2 {
+        font-size: 19px;
+        padding: 0 30px;
+    }
+
+    .contacto h2 {
+        font-size: 19px;
+        padding: 0 30px;
+    }
+
+    .imagen-contacto {
+        height: 65px;
+    }
+
+}
+
+/* PARA MOVILES DE 550 PX */
+@media (max-width: 550px){
+    .home {
+        flex-direction: column;
+    }
+
+    .img-principal {
+        width: 200px;
+    }
+
+    .contenedor-img {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .titulo {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .titulo h1 {
+        text-align: center;
+        font-size: 45px;
+    }
+
+    .titulo h2 {
+        text-align: center;
+        width: 100%;
+    }
+
+    .about h2 {
+        font-size: 20px;
+    }
+
+    .about p {
+        font-size: 13px;
+    }
+
+    .habilidad {
+        width: 100px;
+        height: 100px;
+    }
+
+    .descargar-cv {
+        padding: 11px 15px;
+    }
+
+    .contenedor-habilidades {
+        margin-top: 28%;
+    }
+
+    .portafolio h2 {
+        font-size: 20px;
+    }
+
+    .contacto h2 {
+        font-size: 20px;
+    }
+
+    .contactame {
+        width: 100px;
+        height: 65px;
+        margin: 0 15px;
+    }
+
+    .contactame h3 {
+        font-size: 11px;
+    }
+
+    .proyecto {
+        width: 175px;
+        height: 125px;
+    }
+
+    .capa {
+        width: 175px;
+        height: 0px;
+    }
+
+    .imagen-contacto {
+        width: 80px;
+        height: 50px;
+        object-fit: contain;
+    }
+}
+
+/* PARA MOVILES DE 380 PX */
+@media (max-width: 380px){
+    .menu a{
+        font-size: 15px;
+    }
+
+    .titulo {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .titulo h1 {
+        text-align: center;
+        font-size: 28px;
+    }
+
+    .titulo h2 {
+        text-align: center;
+        width: 100%;
+        font-size: 17px;
+    }
+
+    .contactame {
+        margin: 20px 0;
+    }
+}
+
+.animado {
+    opacity: 1;
+
+    animation: mover 2s ease-in-out;
+}
+
+@keyframes mover {
+    0% {
+        transform: translateY(100%);
+    }
+
+    100% {
+        transform: translateY(0);
+    }
+}
