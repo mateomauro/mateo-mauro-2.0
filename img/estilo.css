@@ -1,11 +1,19 @@
 * {
-    padding: 0;
+    padding: 0; 
     margin: 0;
     box-sizing: border-box;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 /*Todo para pantalla 4k 2560px */
+
+body {
+    background-color: #FFFFFF;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25'%3E%3Cdefs%3E%3ClinearGradient id='a' gradientUnits='userSpaceOnUse' x1='0' x2='0' y1='0' y2='100%25' gradientTransform='rotate(215,640,300)'%3E%3Cstop offset='0' stop-color='%23FFFFFF'/%3E%3Cstop offset='1' stop-color='%234FE'/%3E%3C/linearGradient%3E%3Cpattern patternUnits='userSpaceOnUse' id='b' width='353' height='294.2' x='0' y='0' viewBox='0 0 1080 900'%3E%3Cg fill-opacity='0.12'%3E%3Cpolygon fill='%23444' points='90 150 0 300 180 300'/%3E%3Cpolygon points='90 150 180 0 0 0'/%3E%3Cpolygon fill='%23AAA' points='270 150 360 0 180 0'/%3E%3Cpolygon fill='%23DDD' points='450 150 360 300 540 300'/%3E%3Cpolygon fill='%23999' points='450 150 540 0 360 0'/%3E%3Cpolygon points='630 150 540 300 720 300'/%3E%3Cpolygon fill='%23DDD' points='630 150 720 0 540 0'/%3E%3Cpolygon fill='%23444' points='810 150 720 300 900 300'/%3E%3Cpolygon fill='%23FFF' points='810 150 900 0 720 0'/%3E%3Cpolygon fill='%23DDD' points='990 150 900 300 1080 300'/%3E%3Cpolygon fill='%23444' points='990 150 1080 0 900 0'/%3E%3Cpolygon fill='%23DDD' points='90 450 0 600 180 600'/%3E%3Cpolygon points='90 450 180 300 0 300'/%3E%3Cpolygon fill='%23666' points='270 450 180 600 360 600'/%3E%3Cpolygon fill='%23AAA' points='270 450 360 300 180 300'/%3E%3Cpolygon fill='%23DDD' points='450 450 360 600 540 600'/%3E%3Cpolygon fill='%23999' points='450 450 540 300 360 300'/%3E%3Cpolygon fill='%23999' points='630 450 540 600 720 600'/%3E%3Cpolygon fill='%23FFF' points='630 450 720 300 540 300'/%3E%3Cpolygon points='810 450 720 600 900 600'/%3E%3Cpolygon fill='%23DDD' points='810 450 900 300 720 300'/%3E%3Cpolygon fill='%23AAA' points='990 450 900 600 1080 600'/%3E%3Cpolygon fill='%23444' points='990 450 1080 300 900 300'/%3E%3Cpolygon fill='%23222' points='90 750 0 900 180 900'/%3E%3Cpolygon points='270 750 180 900 360 900'/%3E%3Cpolygon fill='%23DDD' points='270 750 360 600 180 600'/%3E%3Cpolygon points='450 750 540 600 360 600'/%3E%3Cpolygon points='630 750 540 900 720 900'/%3E%3Cpolygon fill='%23444' points='630 750 720 600 540 600'/%3E%3Cpolygon fill='%23AAA' points='810 750 720 900 900 900'/%3E%3Cpolygon fill='%23666' points='810 750 900 600 720 600'/%3E%3Cpolygon fill='%23999' points='990 750 900 900 1080 900'/%3E%3Cpolygon fill='%23999' points='180 0 90 150 270 150'/%3E%3Cpolygon fill='%23444' points='360 0 270 150 450 150'/%3E%3Cpolygon fill='%23FFF' points='540 0 450 150 630 150'/%3E%3Cpolygon points='900 0 810 150 990 150'/%3E%3Cpolygon fill='%23222' points='0 300 -90 450 90 450'/%3E%3Cpolygon fill='%23FFF' points='0 300 90 150 -90 150'/%3E%3Cpolygon fill='%23FFF' points='180 300 90 450 270 450'/%3E%3Cpolygon fill='%23666' points='180 300 270 150 90 150'/%3E%3Cpolygon fill='%23222' points='360 300 270 450 450 450'/%3E%3Cpolygon fill='%23FFF' points='360 300 450 150 270 150'/%3E%3Cpolygon fill='%23444' points='540 300 450 450 630 450'/%3E%3Cpolygon fill='%23222' points='540 300 630 150 450 150'/%3E%3Cpolygon fill='%23AAA' points='720 300 630 450 810 450'/%3E%3Cpolygon fill='%23666' points='720 300 810 150 630 150'/%3E%3Cpolygon fill='%23FFF' points='900 300 810 450 990 450'/%3E%3Cpolygon fill='%23999' points='900 300 990 150 810 150'/%3E%3Cpolygon points='0 600 -90 750 90 750'/%3E%3Cpolygon fill='%23666' points='0 600 90 450 -90 450'/%3E%3Cpolygon fill='%23AAA' points='180 600 90 750 270 750'/%3E%3Cpolygon fill='%23444' points='180 600 270 450 90 450'/%3E%3Cpolygon fill='%23444' points='360 600 270 750 450 750'/%3E%3Cpolygon fill='%23999' points='360 600 450 450 270 450'/%3E%3Cpolygon fill='%23666' points='540 600 630 450 450 450'/%3E%3Cpolygon fill='%23222' points='720 600 630 750 810 750'/%3E%3Cpolygon fill='%23FFF' points='900 600 810 750 990 750'/%3E%3Cpolygon fill='%23222' points='900 600 990 450 810 450'/%3E%3Cpolygon fill='%23DDD' points='0 900 90 750 -90 750'/%3E%3Cpolygon fill='%23444' points='180 900 270 750 90 750'/%3E%3Cpolygon fill='%23FFF' points='360 900 450 750 270 750'/%3E%3Cpolygon fill='%23AAA' points='540 900 630 750 450 750'/%3E%3Cpolygon fill='%23FFF' points='720 900 810 750 630 750'/%3E%3Cpolygon fill='%23222' points='900 900 990 750 810 750'/%3E%3Cpolygon fill='%23222' points='1080 300 990 450 1170 450'/%3E%3Cpolygon fill='%23FFF' points='1080 300 1170 150 990 150'/%3E%3Cpolygon points='1080 600 990 750 1170 750'/%3E%3Cpolygon fill='%23666' points='1080 600 1170 450 990 450'/%3E%3Cpolygon fill='%23DDD' points='1080 900 1170 750 990 750'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect x='0' y='0' fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect x='0' y='0' fill='url(%23b)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    overflow-x: hidden;
+}
 
 .header {
     height: 100vh;
@@ -21,6 +29,7 @@
     background-color: rgb(0, 0, 0, 0.3);
     position: fixed;
     width: 100%;
+    z-index: 10;
 }
 
 .oscuro {
@@ -84,35 +93,6 @@
     display: flex;
     justify-content: end;
     margin-right: 150px;
-    animation: aparecerImg 2s ease-in-out;
-}
-
-@keyframes aparecerImg {
-    0% {
-        opacity: 0;
-        transform: translateX(20%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-.titulo {
-    animation: aparecerText 2s ease-in-out;
-}
-
-@keyframes aparecerText {
-    0% {
-        opacity: 0;
-        transform: translateX(-10%);
-    }
-
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
 }
 
 .titulo, h2{
@@ -134,7 +114,6 @@
 /* ACERCA DE PARA PANTALLA 4K */
 .about {
     min-height: 90vh;
-    background-color: white;
     color: #414141;
     display: grid;
     grid-template-columns: 7% 40% 6% 40% 7%;
@@ -210,7 +189,6 @@
 /* PORTAFILIO PARA PANTALLA 4K */
 .portafolio {
     min-height: 100vh;
-    background-color: white;
 }
 
 .portafolio h2 {
@@ -222,7 +200,6 @@
 
 .contenedor-portafolio {
     padding-top: 12vh;
-    opacity: 0;
 }
 
 .trabajos {
@@ -236,43 +213,79 @@
 }
 
 .proyecto {
-    width: 300px;
+  height: 200px;
+  width: 300px;
+  box-shadow: 5px 5px #414141;
+  margin: 20px 20px;
+}
+
+.imagen-proyec {
     height: 200px;
-    border: solid 2px black;
-    padding: 0 10vh;
-    margin-top: 3vh;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    border-radius: 13px;
+    width: 300px;
     cursor: pointer;
+    overflow: hidden;
+}
+
+.imagen-proyecto {
+    height: 200px;
+    width: 300px;
+    object-fit: cover;
+    border: solid 2px white;
 }
 
 .capa {
     height: 0px;
     width: 300px;
-    background-color: rgba(0, 0, 0, 0.7);
-    border-radius: 13px;
+    display: grid;
+    place-items: center;
+    color: bisque;
+    background-color: rgb(0, 0, 0, 0.7);
+    position: relative;
+    bottom: 100%;
+}
+
+.capa h1 {
+    opacity: 0;
+}
+
+.capa-A {
+    background-color: blueviolet;
+    color: white;
+    text-decoration: none;
+    padding: 10px 30px;
+    border-radius: 10px;
+    opacity: 0;
 }
 
 .proyecto:hover .capa{
-    height: 300px;
+    height: 200px;
+    border: solid 2px white;
     transition: all 1s;
 }
 
+.proyecto:hover .imagen-proyecto {
+    transform: scale(1.2);
+    transition: all 1s;
+}
 
+.proyecto:hover .capa-A {
+    opacity: 1;
+    transition: 2s;
+}
+
+.proyecto:hover .capa h1{
+    opacity: 1;
+    transition: all 2s;
+}
 
 /* CONTACTO PARA PANTALLA 4K */
 .contacto {
     min-height: 50vh;
-    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     padding-top: 10vh;
-    opacity: 0;
 }
 
 .contacto h2 {
@@ -283,22 +296,32 @@
 }
 
 .contenedor-contacto {
-    min-height: 40vh;
-    width: 80%;
+    margin-top: 25px;
+    height: 150px;
+    width: 700px;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     align-items: center;
+    border: solid white 2px;
+    border-radius: 100px;
+    justify-content: space-evenly;
+    background-color: rgb(231, 231, 231);
+    box-shadow: 4px  4px #414141;
 }
 
 .contactame {
     width: 125px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    height: 125px;
+    border-radius: 50%;
+    box-shadow: inset 1px 1px 10px #414141, inset 1px 1px 10px;
+    display: grid;
+    place-items: center;
     cursor: pointer;
+}
+
+.contactame:hover {
+    box-shadow: 4px 4px black;
+    border: solid 2px black;
 }
 
 .contactame a {
@@ -306,26 +329,21 @@
 }
 
 .imagen-contacto {
-    width: 100px;
-    height: 80px;
+    width: 60px;
     object-fit: contain;
-}
-
-.imagen-contacto:hover {
-    filter: brightness(70%);
 }
 
 .contactame h3 {
     font-size: 14px;
     color: #414141;
     text-align: center;
+    display: none;
 }
 
 
 
 .footer {
     height: 25vh;
-    background-color: white;
     display: flex;
     flex-direction: column;
     justify-content: end;
@@ -483,6 +501,28 @@
         height: 0px;
     }
 
+    .imagen-proyec {
+        height: 150px;
+        width: 250px;
+    }
+    
+    .imagen-proyecto {
+        height: 150px;
+        width: 250px;
+    }
+    
+    .proyecto:hover .capa{
+        height: 150px;
+    }
+
+    .capa h1 {
+        font-size: 20px;
+    }
+    
+    .capa-A {
+        padding: 7px 23px;
+    }
+
     .portafolio h2 {
         font-size: 19px;
         padding: 0 30px;
@@ -492,9 +532,19 @@
         font-size: 19px;
         padding: 0 30px;
     }
+    .contenedor-contacto {
+        height: 125px;
+        width: 500px;
+    }
+    
+    .contactame {
+        width: 90px;
+        height: 90px;
+    }
 
     .imagen-contacto {
-        height: 65px;
+        width: 40px;
+        object-fit: contain;
     }
 
 }
@@ -558,11 +608,6 @@
         font-size: 20px;
     }
 
-    .contactame {
-        width: 100px;
-        height: 65px;
-        margin: 0 15px;
-    }
 
     .contactame h3 {
         font-size: 11px;
@@ -578,9 +623,40 @@
         height: 0px;
     }
 
-    .imagen-contacto {
+    .imagen-proyec {
+        height: 125px;
+        width: 175px;
+    }
+    
+    .imagen-proyecto {
+        height: 125px;
+        width: 175px;
+    }
+    
+    .proyecto:hover .capa{
+        height: 125px;
+    }
+
+    .capa h1 {
+        font-size: 15px;
+    }
+    
+    .capa-A {
+        padding: 4px 15px;
+    }
+
+    .contenedor-contacto {
+        height: 400px;
+        width: 120px;
+    }
+    
+    .contactame {
         width: 80px;
-        height: 50px;
+        height: 80px;
+    }
+
+    .imagen-contacto {
+        width: 40px;
         object-fit: contain;
     }
 }
@@ -612,18 +688,3 @@
     }
 }
 
-.animado {
-    opacity: 1;
-
-    animation: mover 2s ease-in-out;
-}
-
-@keyframes mover {
-    0% {
-        transform: translateY(100%);
-    }
-
-    100% {
-        transform: translateY(0);
-    }
-}

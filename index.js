@@ -17,29 +17,6 @@ function oscurecerNav () {
     nav.classList.toggle("abajo-nav", window.scrollY>100);
 }
 
-let contenedorAbout = document.querySelector(".contenedor-about");
-let contenedorHabiladades = document.querySelector(".contenedor-habilidades");
-let portafolio = document.querySelector(".contenedor-portafolio");
-let contacto = document.querySelector(".contacto");
-
-let cargarAbout = (entradas, observador) => {
-
-    entradas.forEach(entrada => {
-        if (entrada.isIntersecting) {
-            entrada.target.classList.add("animado");
-        }
-    });
-}
-
-let observador = new IntersectionObserver(cargarAbout, {
-    root: null,
-    threshold: 0.1
-});
-
-observador.observe(contenedorAbout);
-observador.observe(contenedorHabiladades);
-observador.observe(portafolio);
-observador.observe(contacto);
 
 
 

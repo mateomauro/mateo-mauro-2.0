@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="img/estilo.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body>
     <header class="header">
@@ -24,17 +25,17 @@
             </div>
         </nav>
         <section class="home" id="home">
-            <picture class="contenedor-img">
+            <picture class="contenedor-img" data-aos="fade-right" data-aos-duration="1500">
                 <img src="img/mateo.jpg" class="img-principal">
             </picture>
-            <div class="titulo">
+            <div class="titulo" data-aos="fade-left" data-aos-duration="1500">
                 <h1>Mateo Mauro</h1>
                 <h2>Desarrolador Full Stack</h2>
             </div>
         </section>
     </header>
     <section class="about" id="about">
-        <div class="contenedor-about">
+        <div class="contenedor-about" data-aos="fade-right" data-aos-duration="1500">
             <h2>Desarrollador Full Stack.</h2>
             <div class="informacion">
                 <p>Mateo es una persona responsable, trabajadora y optimista.
@@ -48,7 +49,7 @@
                 <a href="css/img/equipos seven.pdf" download class="descargar-cv">Descargar CV</a>   
             </div>
         </div>
-        <div class="contenedor-habilidades">
+        <div class="contenedor-habilidades"  data-aos="fade-left" data-aos-duration="1500">
               <h2>Habilidades y Tecnologias</h2>
             <div class="display-habilidades">
                 <div class="habilidad" >
@@ -68,27 +69,22 @@
     </section>
     <section class="portafolio" id="portafolio">
         <div class="contenedor-portafolio">
-            <h2>Aqui puedes ver los proyectos en los que he realizado. </h2>
+            <h2 data-aos="zoom-in" data-aos-duration="700">Aqui puedes ver los proyectos en los que he realizado. </h2>
             <div class="trabajos">
-                <div class="proyecto">
-                    <div class="capa">
-    
+                <div class="proyecto" data-aos="flip-up" data-aos-duration="1200">
+                    <div class="imagen-proyec">
+                        <img src="img/pintadelivery.jpg" class="imagen-proyecto">
                     </div>
-                </div>
-                <div class="proyecto">
                     <div class="capa">
-    
+                        <h1>Pinta Delivery</h1>
+                        <a href="http://www.pintadelivery.shop/" class="capa-A" target="_blank">Web site</a>
+                        <a href="https://github.com/mateomauro/pintaDelivery.git" class="capa-A" target="_blank">Git</a>
                     </div>
-                </div>
-                <div class="proyecto">
-                    <div class="capa">
-    
-                    </div>
-                </div>
+                </div>              
             </div>
         </div>
     </section>
-    <section class="contacto" id="contacto">
+    <section class="contacto" id="contacto" data-aos="fade-up" data-aos-duration="3000">
         <h2>Contactame si queres que trabajemos juntos.</h2>
         <div class="contenedor-contacto">
             <div class="contactame">
@@ -121,5 +117,9 @@
         </p>
     </footer>
     <script src="index.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
 </body>
 </html>
